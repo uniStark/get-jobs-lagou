@@ -8,6 +8,7 @@ import org.openqa.selenium.logging.LogType;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
+import java.time.Duration;
 import java.util.Set;
 
 /**
@@ -22,7 +23,7 @@ public class ResumeSubmission {
     static String baseUrl = "https://www.lagou.com/wn/jobs?px=new&pn=";
     static String loginUrl = "https://www.lagou.com";
     static ChromeDriver driver = new ChromeDriver();
-    static WebDriverWait wait10s = new WebDriverWait(driver, 10000);
+    static WebDriverWait wait10s = new WebDriverWait(driver, Duration.ofSeconds(10));
 
     public static void main(String[] args) {
         login();
